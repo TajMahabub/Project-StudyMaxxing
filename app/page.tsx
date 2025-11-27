@@ -1,7 +1,6 @@
 "use client";
-
+import TestEmailButton from "./api/components/emailbutton";
 import { useEffect, useState } from "react";
-
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -121,6 +120,7 @@ export default function Home() {
         <li>• Session recap emails after each focus block</li>
         <li>• Sent from <span className="font-mono text-xs">studybuddy@studymaxxing.app</span></li>
       </ul>
+      <TestEmailButton />
     </div>
 
     {/* Visual example  */}
